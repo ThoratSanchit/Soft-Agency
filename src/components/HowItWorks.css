@@ -163,16 +163,26 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .how-it-works-container {
+    padding: 0 1.5rem;
+  }
+
+  .steps-container {
+    gap: 2.5rem;
+  }
+}
+
 @media (max-width: 968px) {
   .steps-container {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .step-connector {
     display: none;
   }
-  
+
   .step-card {
     padding: 2rem 1.5rem;
   }
@@ -182,57 +192,122 @@
   .how-it-works {
     padding: 3rem 0;
   }
-  
+
   .how-it-works-container {
     padding: 0 1rem;
   }
-  
+
   .how-it-works-header h2 {
     font-size: 2rem;
   }
-  
+
   .how-it-works-header p {
     font-size: 1rem;
   }
-  
+
   .step-card {
-    padding: 1.5rem 1rem;
+    padding: 1.75rem 1.25rem;
   }
-  
+
   .step-icon {
     font-size: 2.5rem;
   }
-  
+
   .step-title {
     font-size: 1.3rem;
   }
-  
+
   .step-description {
     font-size: 0.9rem;
   }
 }
 
+@media (max-width: 640px) {
+  .how-it-works-container {
+    padding: 0 0.75rem;
+  }
+
+  .step-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .how-it-works-cta {
+    padding: 1.5rem;
+  }
+}
+
 @media (max-width: 480px) {
+  .how-it-works-container {
+    padding: 0 0.5rem;
+  }
+
   .how-it-works-header h2 {
     font-size: 1.8rem;
   }
-  
+
+  .how-it-works-header p {
+    font-size: 0.95rem;
+  }
+
   .step-number {
     width: 35px;
     height: 35px;
     font-size: 1rem;
   }
-  
+
   .step-icon {
     font-size: 2rem;
   }
-  
+
   .step-title {
     font-size: 1.2rem;
   }
-  
+
+  .step-description {
+    font-size: 0.875rem;
+  }
+
   .btn-get-started {
     padding: 0.875rem 2rem;
     font-size: 1rem;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .how-it-works-cta {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .how-it-works-container {
+    padding: 0 0.25rem;
+  }
+
+  .how-it-works-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .step-card {
+    padding: 1.25rem 0.875rem;
+  }
+
+  .step-number {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  .step-icon {
+    font-size: 1.75rem;
+  }
+
+  .step-title {
+    font-size: 1.1rem;
+  }
+
+  .btn-get-started {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
   }
 }

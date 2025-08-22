@@ -275,43 +275,152 @@
   color: #667eea;
 }
 
+@media (max-width: 1024px) {
+  .about-hero-container,
+  .about-container {
+    padding: 0 1.5rem;
+  }
+
+  .about-mission {
+    gap: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
   .about-hero {
-    padding: 2rem 0;
+    padding: 2.5rem 0;
   }
-  
+
   .about-hero h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
-  
+
+  .about-hero p {
+    font-size: 1.1rem;
+  }
+
+  .about-hero-container,
   .about-container {
     padding: 0 1rem;
   }
-  
+
   .about-mission {
     grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 2rem 0;
+    padding: 3rem 0;
   }
-  
+
   .mission-content h2 {
     font-size: 2rem;
   }
-  
-  .about-features, .about-stats, .about-team {
-    padding: 2rem 0;
+
+  .mission-content p {
+    font-size: 1rem;
   }
-  
+
+  .about-features, .about-stats, .about-team {
+    padding: 3rem 0;
+  }
+
   .about-features h2, .about-stats h2, .about-team h2 {
     font-size: 2rem;
   }
-  
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
   .cta-buttons {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
   }
-  
+
   .btn-primary, .btn-secondary {
-    width: 200px;
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-hero-container,
+  .about-container {
+    padding: 0 0.75rem;
+  }
+
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .mission-content h2,
+  .about-features h2,
+  .about-stats h2,
+  .about-team h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 2rem 0;
+  }
+
+  .about-hero-container,
+  .about-container {
+    padding: 0 0.5rem;
+  }
+
+  .about-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  .about-mission {
+    padding: 2rem 0;
+  }
+
+  .mission-content h2,
+  .about-features h2,
+  .about-stats h2,
+  .about-team h2 {
+    font-size: 1.6rem;
+  }
+
+  .mission-content p {
+    font-size: 0.95rem;
+  }
+
+  .about-features, .about-stats, .about-team {
+    padding: 2rem 0;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .about-hero-container,
+  .about-container {
+    padding: 0 0.25rem;
+  }
+
+  .about-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .mission-content h2,
+  .about-features h2,
+  .about-stats h2,
+  .about-team h2 {
+    font-size: 1.4rem;
+  }
+
+  .feature-card {
+    padding: 1.25rem;
   }
 }
