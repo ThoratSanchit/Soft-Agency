@@ -19,7 +19,7 @@ const Header = ({ searchTerm, setSearchTerm }) => {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo" onClick={closeMobileMenu}>
-          <h1>CodeMarket</h1>
+          <h1>projeckta</h1>
           <span className="tagline">Premium Software Projects</span>
         </Link>
 
