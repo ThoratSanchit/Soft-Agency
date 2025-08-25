@@ -87,8 +87,8 @@ const ProductGrid = ({ searchTerm, selectedCategory }) => {
 
                 <div className="product-footer">
                   <div className="product-price">
-                    <span className="current-price">${product.price}</span>
-                    <span className="original-price">${product.originalPrice}</span>
+                    <span className="current-price">₹{product.price}</span>
+                    <span className="original-price">₹{product.originalPrice}</span>
                   </div>
                   <button className="btn-buy">Buy Now</button>
                 </div>
