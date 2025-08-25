@@ -74,17 +74,7 @@ const ProductGrid = ({ searchTerm, selectedCategory }) => {
                   )}
                 </div>
 
-                <div className="product-rating">
-                  <div className="stars">
-                    {[...Array(5)].map((_, i) => (
-                      <span key={i} className={`star ${i < Math.floor(product.rating) ? 'filled' : ''}`}>
-                        ★
-                      </span>
-                    ))}
-                  </div>
-                  <span className="rating-text">{product.rating} ({product.reviews} reviews)</span>
-                </div>
-
+                
                 <div className="product-footer">
                   <div className="product-price">
                     <span className="current-price">₹{product.price}</span>
