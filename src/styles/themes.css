@@ -21,7 +21,7 @@
   --brand-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --accent-color: #ff6b6b;
   --success-color: #48bb78;
-  --warning-color: #ed8936;
+  --warning-color: #fbbf24;
   --error-color: #e53e3e;
   
   /* Interactive States */
@@ -129,6 +129,17 @@ input:focus, textarea:focus, select:focus {
 }
 
 .dark-theme .footer {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+}
+
+.dark-theme .about-page,
+.dark-theme .contact-page,
+.dark-theme .projects-page,
+.dark-theme .categories-page {
+  background-color: var(--bg-primary);
+}
+
+.dark-theme .custom-project-request {
   background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
 }
 

@@ -72,7 +72,7 @@
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: var(--brand-gradient);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -85,7 +85,7 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: #e53e3e;
+  background: var(--error-color);
   color: white;
   padding: 0.5rem 0.8rem;
   border-radius: 15px;
@@ -125,7 +125,7 @@
 }
 
 .btn-view-details {
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: var(--brand-gradient);
   color: white;
 }
 
@@ -191,7 +191,7 @@
 }
 
 .tech-more {
-  background: #667eea;
+  background: var(--brand-primary);
   color: white;
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
@@ -221,15 +221,15 @@
 
 .star {
   font-size: 1rem;
-  color: #e2e8f0;
+  color: var(--border-color);
 }
 
 .star.filled {
-  color: #fbbf24;
+  color: var(--warning-color);
 }
 
 .star.half {
-  background: linear-gradient(90deg, #fbbf24 50%, #e2e8f0 50%);
+  background: linear-gradient(90deg, var(--warning-color) 50%, var(--border-color) 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -267,7 +267,7 @@
 .current-price {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #667eea;
+  color: var(--brand-primary);
 }
 
 .original-price {
@@ -277,7 +277,7 @@
 }
 
 .btn-add-to-cart {
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: var(--brand-gradient);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -302,7 +302,7 @@
 }
 
 .btn-view-all {
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: var(--brand-gradient);
   color: white;
   border: none;
   padding: 1rem 2.5rem;

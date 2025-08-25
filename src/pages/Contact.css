@@ -3,7 +3,7 @@
 }
 
 .contact-hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--brand-gradient);
   color: white;
   padding: 4rem 0;
   text-align: center;
@@ -109,7 +109,7 @@
 }
 
 .btn-submit {
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: var(--brand-gradient);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -162,7 +162,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--brand-gradient);
   border-radius: 12px;
   color: white;
   flex-shrink: 0;

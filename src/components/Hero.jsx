@@ -24,6 +24,19 @@ const Hero = () => {
     navigate('/projects')
   }
 
+  const scrollToCustomRequest = () => {
+    const element = document.getElementById('custom-project-request')
+    if (element) {
+      const headerHeight = document.querySelector('.header').offsetHeight
+      const elementPosition = element.offsetTop - headerHeight - 20 // 20px extra padding
+
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      })
+    }
+  }
+
   return (
     <section className="hero">
       <div className="hero-container">
@@ -56,6 +69,9 @@ const Hero = () => {
             </button>
             <button className="btn-hero-secondary" onClick={scrollToHowItWorks}>
               How It Works
+            </button>
+            <button className="btn-hero-tertiary" onClick={scrollToCustomRequest}>
+              Request Custom Project
             </button>
           </div>
         </div>

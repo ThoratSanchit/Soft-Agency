@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-primary) 100%);
   color: white;
   padding: 3rem 0 0;
 }
@@ -21,7 +21,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: var(--brand-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -31,11 +31,11 @@
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #e2e8f0;
+  color: var(--text-secondary);
 }
 
 .footer-section p {
-  color: #a0aec0;
+  color: var(--text-muted);
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
@@ -59,7 +59,7 @@
 }
 
 .social-link:hover {
-  background: #667eea;
+  background: var(--brand-primary);
   transform: translateY(-2px);
 }
 
@@ -74,14 +74,14 @@
 }
 
 .footer-links a {
-  color: #a0aec0;
+  color: var(--text-muted);
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 0.9rem;
 }
 
 .footer-links a:hover {
-  color: #667eea;
+  color: var(--brand-primary);
   padding-left: 0.5rem;
 }
 
@@ -94,7 +94,7 @@
 .newsletter-input {
   flex: 1;
   padding: 0.75rem;
-  border: 1px solid #4a5568;
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
   color: white;

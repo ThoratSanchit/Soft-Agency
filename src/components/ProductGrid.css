@@ -75,7 +75,7 @@
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  background: linear-gradient(45deg, var(--accent-color), #ee5a24);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -205,7 +205,7 @@
 }
 
 .tech-more {
-  background: #667eea;
+  background: var(--brand-primary);
   color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
@@ -231,7 +231,7 @@
 }
 
 .star.filled {
-  color: #fbbf24;
+  color: var(--warning-color);
 }
 
 .rating-text {
@@ -264,7 +264,7 @@
 }
 
 .btn-buy {
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: var(--brand-gradient);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
