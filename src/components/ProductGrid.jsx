@@ -1,9 +1,11 @@
 import React, { useState, useMemo } from 'react'
 import { products, filterProducts, sortProducts } from '../data'
 import './ProductGrid.css'
+import { useNavigate } from 'react-router-dom'
 
 const ProductGrid = ({ searchTerm, selectedCategory }) => {
   const [sortBy, setSortBy] = useState('popular')
+  const navigate = useNavigate()
 
   const filteredProducts = useMemo(() => {
     // Create filter object
@@ -52,14 +54,14 @@ const ProductGrid = ({ searchTerm, selectedCategory }) => {
               <div className="product-image">
                 <img src={product.image} alt={product.title} />
                 <div className="product-overlay">
-                  <button className="btn-preview">Quick Preview</button>
-                  <button className="btn-demo">Live Demo</button>
+                  <button className="btn-preview" onClick={() => navigate(`/projects/${product.id}`)}>See Details</button>
+                  <button className="btn-demo" onClick={() => window.open(product.demoUrl, '_blank')}>Live Demo</button>
                 </div>
               </div>
 
               <div className="product-content">
                 <div className="product-header">
-                  <h3 className="product-title">{product.title}</h3>
+                  <h3 className="product-title" onClick={() => navigate(`/projects/${product.id}`)} style={{cursor:'pointer'}}>{product.title}</h3>
                   <span className="product-level">{product.level}</span>
                 </div>
                 
