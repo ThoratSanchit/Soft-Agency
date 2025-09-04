@@ -34,8 +34,8 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => {
                 <div className="category-detailed-technologies">
                   <h4>Popular Technologies:</h4>
                   <div className="tech-tags">
-                    {category.technologies.map((tech, index) => (
-                      <span key={index} className="tech-tag">{tech}</span>
+                    {category.technologies.map((tech, key) => (
+                      <span key={key} className="tech-tag">{tech}</span>
                     ))}
                   </div>
                 </div>
