@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { siteConfig, teamMembers } from '../data'
 import './About.css'
-
+import { domain } from '../constants/domain'
 const About = () => {
   const navigate = useNavigate()
   const { features, stats: siteStats } = siteConfig
@@ -27,7 +27,7 @@ const About = () => {
     <div className="about-page">
       <div className="about-hero">
         <div className="about-hero-container">
-          <h1>About CodeMarket</h1>
+          <h1>About {domain}</h1>
           <p>Empowering the next generation of developers with premium software projects</p>
         </div>
       </div>
@@ -38,7 +38,7 @@ const About = () => {
             <div className="mission-content">
               <h2>Our Mission</h2>
               <p>
-                At CodeMarket, we believe that every student and aspiring developer deserves access to 
+                At {domain}, we believe that every student and aspiring developer deserves access to 
                 high-quality, real-world software projects. Our mission is to bridge the gap between 
                 academic learning and industry requirements by providing a curated marketplace of 
                 premium software projects.
@@ -56,7 +56,7 @@ const About = () => {
           </section>
 
           <section className="about-features">
-            <h2>Why Choose CodeMarket?</h2>
+            <h2>Why Choose {domain}?</h2>
             <div className="features-grid">
               {features.map((feature, index) => (
                 <div key={index} className="feature-card">

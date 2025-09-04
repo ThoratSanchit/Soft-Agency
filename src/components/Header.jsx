@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { searchProducts } from '../data'
 import ThemeToggle from './ThemeToggle'
 import './Header.css'
+import { domain } from '../constants/domain'
 
 const Header = ({ searchTerm, setSearchTerm }) => {
   const location = useLocation()
@@ -78,7 +79,7 @@ const Header = ({ searchTerm, setSearchTerm }) => {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo" onClick={closeMobileMenu}>
-          <h1>projeckta</h1>
+          <h1>{domain}</h1>
           <span className="tagline">Premium Software Projects</span>
         </Link>
 
