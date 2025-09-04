@@ -10,7 +10,6 @@ import Projects from './pages/Projects'
 import Categories from './pages/Categories'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import ProjectDetails from './pages/ProjectDetails'
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -40,7 +39,6 @@ function App() {
                   setSelectedCategory={setSelectedCategory}
                 />
               } />
-              <Route path="/projects/:id" element={<ProjectDetails />} />
               <Route path="/categories" element={
                 <Categories
                   selectedCategory={selectedCategory}

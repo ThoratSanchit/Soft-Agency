@@ -2,10 +2,8 @@ import React from 'react'
 import { getFeaturedProducts } from '../data'
 import { formatPrice, calculateDiscount } from '../utils/dataUtils'
 import './FeaturedProjects.css'
-import { useNavigate } from 'react-router-dom'
 
 const FeaturedProjects = () => {
-  const navigate = useNavigate()
   // Get featured products and limit to top 6
   const featuredProducts = getFeaturedProducts().slice(0, 6)
 
@@ -51,8 +49,8 @@ const FeaturedProjects = () => {
                     <div className="discount-badge">-{discount}%</div>
                   )}
                   <div className="card-overlay">
-                    <button className="btn-view-details" onClick={() => navigate(`/projects/${project.id}`)}>See Details</button>
-                    <button className="btn-quick-preview" onClick={() => navigate(`/projects/${project.id}`)}>See Details</button>
+                    <button className="btn-view-details">View Details</button>
+                    <button className="btn-quick-preview">Quick Preview</button>
                   </div>
                 </div>
 
